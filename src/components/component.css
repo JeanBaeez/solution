@@ -1,0 +1,159 @@
+.firstInputBlock{
+    justify-content: center;
+    gap: 17px;
+    margin-top: 40px;
+    padding-left:60px ;
+}
+#name {
+    width: 400px;
+    margin-left: 20px;
+    border: 2px solid #000000;
+}
+#location{
+    width: 400px;
+    border: 2px solid #000000;
+}
+#grid  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 17px;
+    margin-top: 40px;
+    padding-left:60px ;
+}
+.button-group{
+    /* put the buttons to the end of the grid */
+    display: flex;
+    justify-content: end;
+    gap: 17px;
+    margin-top: 40px;
+    margin-right:180px ;
+
+
+}
+ 
+#clearButton{
+   
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.2s ease-in-out;
+}
+#addButton{
+ 
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+ 
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.2s ease-in-out;
+}
+ 
+
+#clearButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+@media (min-width: 768px) {
+  #clearButton {
+    padding: 0.25em 0.75em;
+  }
+}
+
+ 
+#addButton:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    
+  }
+  @media (min-width: 768px) {
+    #addButton {
+      padding: 0.25em 0.75em;
+    }
+ }
+ .table{
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-collapse: collapse;
+    width:  500px auto;
+    color: #000000;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+    
+
+ }
+ .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+.table td, .table th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.tableSection{
+   display: flex;
+    justify-content: center;
+}
+ .thead1 { 
+  width: 300px;
+    border: #000000 1px solid;
+}
+.thead2 { 
+    width: 400px;
+      border: #000000 1px solid;
+  }
+  @media (max-width: 568px) {
+    #name {
+      width: 200px;
+    }
+    #location {
+      width: 200px;
+    }
+    .container {
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      display: block;
+      margin-left: auto;
+
+    }
+    #grid{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-left:0px ;
+    }
+  }
